@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import AppCenter
+import AppCenterAnalytics
+import AppCenterCrashes
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +20,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
         window?.makeKeyAndVisible()
 
+        
+        AppCenter.start(withAppSecret: "02c94e0c-927d-4d04-9b1d-4667749293c6", services:[
+          Analytics.self,
+          Crashes.self
+        ])
+        
+        //AppCenter.logLevel = .verbose
+        
         return true
     }
+    
 }
