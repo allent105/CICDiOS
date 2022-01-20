@@ -1,0 +1,6 @@
+framework module Pods_CICDiOS_CICDiOSUITests {
+  umbrella header "Pods-CICDiOS-CICDiOSUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
