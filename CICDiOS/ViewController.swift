@@ -22,6 +22,9 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        if Crashes.hasCrashedInLastSession {
+            print("App had crashed in last session")
+        }
         Analytics.trackEvent("navigated_to_main_screen")
     }
 
