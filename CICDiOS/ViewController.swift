@@ -45,7 +45,7 @@ extension ViewController {
         locationButton.translatesAutoresizingMaskIntoConstraints = false
         //locationButton.setBackgroundImage(UIImage(systemName: "location.circle.fill"), for: .normal)
         locationButton.setTitle("Press Me", for: .normal)
-        locationButton.setTitleColor(.black, for: .normal)
+        locationButton.setTitleColor(.label, for: .normal)
         locationButton.addTarget(self, action: #selector(locationPressed(_:)), for: .primaryActionTriggered)
         locationButton.tintColor = .label
     }
