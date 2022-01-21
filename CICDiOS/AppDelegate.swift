@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
 
         
-        AppCenter.start(withAppSecret: "02c94e0c-927d-4d04-9b1d-4667749293c6", services:[
+        AppCenter.start(withAppSecret: "47c7f15e-7694-41ee-a634-1bc4e1933ad1", services:[
           Analytics.self,
           Crashes.self
         ])
