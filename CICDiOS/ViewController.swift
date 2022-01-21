@@ -27,8 +27,9 @@ class ViewController: UIViewController {
 
     @objc func locationPressed(_ sender: UIButton) {
         print("locationPressed")
-        Crashes.generateTestCrash()
-        //Analytics.trackEvent("button_pressed")
+        //Crashes.generateTestCrash()
+        let properties = ["current_age": String(35), "planned_age": String(65)]
+        Analytics.trackEvent("button_pressed", withProperties: properties)
     }
 }
 
